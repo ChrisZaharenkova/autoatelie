@@ -61,8 +61,8 @@
     .slide-body{font-size: 16px;font-weight: 600;}
   }
   @media(max-width:479px){
-    .itc-slider__item{height:200px;flex: 0 0 50%;}
-    .slide-body{font-size: 14px;font-weight: 500;}
+    .itc-slider__item{height:140;}
+    .slide-body{font-size: 12px;font-weight: 500;}
   }
   
   /* кнопки влево и вправо */
