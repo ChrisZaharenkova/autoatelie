@@ -61,7 +61,7 @@
     .slide-body{font-size: 16px;font-weight: 600;}
   }
   @media(max-width:479px){
-    .itc-slider__item{height:140px; flex: 0 0 33.333%;}
+    .itc-slider__item{height:140px;}
     .slide-body{font-size: 12px;font-weight: 500;padding:0 15px;}
   }
   
