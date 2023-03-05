@@ -96,14 +96,14 @@ body {
    
     background-color: #444b4ac2;
     flex: 1 1 auto;
-    padding: 300px 0;
+    padding: 350px 0;
 }
 .fullscreen__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: right;
-}/*
+}
 @media(max-width:1400px){
     .fullscreen{min-height: 100vh;}
     .fullscreen__container{
@@ -111,11 +111,9 @@ body {
     }
     .fullscreen__body{padding: 0;}
  
-}*/
-@media(max-width:1400px){
-  .fullscreen__container{min-height: auto;}
-  .fullscreen__body{padding: 200px 0 150px 0;}
 }
+
+  
 .fullscreen__label {
     font-size: 24px;
     margin-bottom: 10px;
@@ -168,6 +166,9 @@ body {
     }
 }
 @media(max-width:479px){
+  .fullscreen__container{min-height: auto;}
+  .fullscreen__body{padding: 200px 0 150px 0;}
+
     .del{
         display: none;
     }
