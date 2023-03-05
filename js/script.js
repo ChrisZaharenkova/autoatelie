@@ -8,11 +8,15 @@ $(function(){
   });
   const anchors = document.querySelectorAll('a.scroll-to')
 
-  $("a[href*=#]").on("click", function (e) {
-    var anchor = $(this);
-    $('html, body').stop().animate({
-    scrollTop: $(anchor.attr('href')).offset().top
-    }, 1000);
-    e.preventDefault();
-    return false;
-    });
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href')
+    
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
