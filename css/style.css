@@ -37,7 +37,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  line-height: 120%;
+  line-height: 1;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -555,6 +555,7 @@ body {
     text-transform: uppercase;
 }
 .body-item-catalog__text {
+  line-height: 120%;
 }
 .body-item-catalog__materials {
 }
@@ -598,7 +599,7 @@ body {
     padding: 0 0 50px 0;}
 }
 .other {
-  padding: 0 0 80px 0;
+ 
 }
 .other__container {
 }
@@ -658,6 +659,7 @@ body {
   z-index: -1;
 }
 @media(max-width:767px){
+  .other{padding: 0 0 50px 0;}
   .other__grid{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr auto;
@@ -665,12 +667,12 @@ body {
   .long{grid-column: 1/2;}
 }
 @media(max-width:479px){
-  .other{padding: 0 0 50px 0;}
+  
 }
 /*--------------strap------------------*/
 .strap {
   color: black;
-  padding: 0 0 80px 0;
+
 }
 .strap__container {
 }
@@ -689,6 +691,7 @@ body {
   font-weight: 500;
 }
 .body-strap__text {
+  line-height: 120%;
 }
 .strap__image {
   padding: 0 40% 40% 0;
@@ -703,6 +706,7 @@ body {
   object-fit: contain;
 }
 @media(max-width:767px){
+  .strap{padding: 0 0 50px 0;}
   .body-strap__title{font-size: 18px;margin-bottom: 20px;}
 }
 @media(max-width:479px){
