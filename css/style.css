@@ -105,6 +105,7 @@ body {
   margin-bottom: 20px;
 }
 .input {
+  border-radius: 0px;
   background-color: transparent;
   outline: none;
   border: 0;
