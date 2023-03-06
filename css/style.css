@@ -73,8 +73,8 @@ body {
 .header__list {
     display: flex;
     gap: 30px;
-    
 }
+.header__tel{display: none;}
 .header__item {
 }
 .header__link {
@@ -169,9 +169,12 @@ body {
   .fullscreen__container{min-height: auto;}
   .fullscreen__body{padding: 200px 0 150px 0;}
 
-    .del{
+    .header__list{
         display: none;
     }
+    .header__row{flex-direction: row-reverse;}
+    .header__tel{display: block;}
+    .header__tel a{color: #FEFFFF;}
     .fullscreen__container{
         
     }
@@ -201,7 +204,7 @@ body {
   position: relative;
 }
 .slide-body{
-  background-color: #444b4aa9;
+  background-color: #292d2fb5;
   text-transform: uppercase;
   color: white;
   height: 100%;
@@ -413,15 +416,16 @@ body {
     .item-body-benefits__image img{width: 60px;}
   }
   @media(max-width:479px){
+    .benefits__container{padding: 0;}
     .item-body-benefits__image img{width: 50px;}
     .benefits{font-size: 14px;}
     
     .benefits__row {
       height: 100%;
-      padding: 30px 0;
+      
       flex-direction: column-reverse;
     }
-    .benefits__body{width: 100%;padding: 0 0 40px 0;}
+    .benefits__body{width: 100%;padding: 40px 0;}
     .benefits__images{width: 100%;height: inherit;}
     .benefits {
       margin-bottom: 50px;}
@@ -573,4 +577,79 @@ body {
 }
 @media(max-width:479px){
   .other{padding: 0 0 50px 0;}
+}
+/*--------------strap------------------*/
+.strap {
+  color: black;
+  padding: 0 0 80px 0;
+}
+.strap__container {
+}
+.strap__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.strap__body {
+  width: 60%;
+}
+.body-strap__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.body-strap__text {
+}
+.strap__image {
+  padding: 0 40% 40% 0;
+  position: relative;
+}
+.strap__image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media(max-width:767px){
+  .body-strap__title{font-size: 18px;margin-bottom: 20px;}
+}
+@media(max-width:479px){
+  .strap__body {
+    width: 100%;
+  }
+  .strap__row {flex-direction: column;align-items: flex-start;}
+  .strap__image {
+    padding: 0 100% 90% 0;
+}
+.strap {
+  padding: 0 0 50px 0;
+}}
+.map__container{padding: 0;}
+.footer {
+ 
+  background-color: rgba(221, 203, 182, 1);
+  color: #272F42;
+  padding: 30px 0;
+}
+.footer__container {
+}
+.footer__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer__item {display: flex;gap: 10px;
+}
+.footer__title {font-weight: 500;
+}
+.footer__text{font-weight: 300;}
+.footer__text a{color: #272F42;
+}
+@media(max-width:991px){
+  .footer{font-size: 14px;}
+  .footer__row{flex-wrap: wrap;}
 }
