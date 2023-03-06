@@ -419,13 +419,11 @@ body {
     .benefits__container{padding: 0;}
     .item-body-benefits__image img{width: 50px;}
     .benefits{font-size: 14px;}
-    
     .benefits__row {
       height: 100%;
-      
       flex-direction: column-reverse;
     }
-    .benefits__body{width: 100%;padding: 40px 0;}
+    .benefits__body{width: 100%;padding: 40px 20px;}
     .benefits__images{width: 100%;height: inherit;}
     .benefits {
       margin-bottom: 50px;}
