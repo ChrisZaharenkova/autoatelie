@@ -49,11 +49,88 @@ body {
     margin: 0 auto;
 }
 .wrapper{
+    position: relative;
     overflow: hidden;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
+/*------------ФОРМА--------------------*/
+.block {
+  max-width: 500px;
+  z-index: 5;
+  display: none;
+  border-radius: 20px;
+  padding: 20px;
+  min-height:auto;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #e7ddd2;
+  color: #272F42;
+}
+@media(max-width:479px){
+  .block{left: 20px;right: 20px;}
+}
+.block__title-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.block__title {
+  text-transform: uppercase;
+}
+.block__close{
+  cursor: pointer;
+  padding: 10px;
+}
+.block.open{
+  display: block;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.label {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.input {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #272F42;
+  margin-bottom: 10px;
+  color: #272F42;
+  padding: 0 0 5px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.textarea{
+  background-color: rgba(39, 47, 66, 0.17);
+  outline: none;
+  border: 1px solid #272F42;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #272F42;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.form-button {
+  background-color: #272F42;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+/*-------------------------------*/
 .page{flex: 1 1 auto;}
 .header {
     position: absolute;
@@ -86,7 +163,7 @@ body {
 }
 
 .fullscreenMain{
-  line-height: normal;
+  line-height: 1;
     position: relative; 
     max-width: 100%; 
 }
@@ -99,16 +176,20 @@ body {
     padding: 350px 0;
 }
 .fullscreen__container{
+  position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    justify-content: flex-end;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0 20px 70px 20px;
 
 }
 @media(max-width:1400px){
     .fullscreen{min-height: 100vh;}
     .fullscreen__container{
         min-height: 100vh;
+        
     }
     .fullscreen__body{padding: 0;}
  
@@ -116,18 +197,33 @@ body {
 
 
 .fullscreen__label {
+  
     font-size: 24px;
     margin-bottom: 10px;
 }
 .fuulscreen__title {
     text-transform: uppercase;
     font-size: 70px;
-    margin-bottom: 30px;
+  
     font-weight: 700;
 }
 .fullscren__subtitle {
     text-transform: uppercase;
     font-size: 26px;
+    padding: 30px 0 50px 0;
+}
+.fullscreen__button{
+
+
+  background-color: #272F42;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 24px;
+ 
+ 
 }
 .fuulscreen__image {
     position: absolute;
@@ -144,7 +240,6 @@ body {
     .header__city{font-size: 14px;}
     .fuulscreen__title {
         font-size: 57px;
-        margin-bottom: 20px;
     }
     .fullscren__subtitle{
         font-size: 20px;
@@ -159,7 +254,6 @@ body {
     .header__city{font-size: 12px;}
     .fuulscreen__title {
         font-size: 48px;
-        margin-bottom: 20px;
     }
     .fullscreen__label{font-size: 20px;}
     .fullscren__subtitle{
@@ -167,8 +261,9 @@ body {
     }
 }
 @media(max-width:479px){
-  .fullscreen__container{min-height: auto;}
-  .fullscreen__body{padding: 200px 0 150px 0;}
+  .fullscreen__button{font-size: 16px;padding: 20px;}
+  .fullscreen__container{min-height: auto;padding: 0 20px;}
+  .fullscreen__body{padding: 300px 0 50px 0;}
 
     .header__list{
         display: none;
@@ -181,14 +276,14 @@ body {
     }
     .fuulscreen__title {
         font-size: 24px;
-        margin-bottom: 20px;
     }
     .fullscreen__label{font-size: 14px;}
     .fullscren__subtitle{
         font-size: 14px;
-     
-        
     }
+    .fullscren__subtitle {
+      padding: 20px 0 30px 0;
+  }
 }
 /*-------------------------slider------------------------*/
 .services{
