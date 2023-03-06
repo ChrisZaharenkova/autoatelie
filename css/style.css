@@ -74,7 +74,7 @@ body {
   color: #272F42;
 }
 @media(max-width:991px){
-  .block{top:20%;}
+  .block{top:10%;}
 }
 @media(max-width:479px){
   .block{left: 20px;right: 20px;top:10%;}
