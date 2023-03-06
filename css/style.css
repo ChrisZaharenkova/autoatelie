@@ -77,7 +77,7 @@ body {
   .block{top:20%;}
 }
 @media(max-width:479px){
-  .block{left: 20px;right: 20px;top:18%;}
+  .block{left: 20px;right: 20px;top:10%;}
 }
 .block__title-block{
   display: flex;
