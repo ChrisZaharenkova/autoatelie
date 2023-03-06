@@ -22,7 +22,9 @@ for (let anchor of anchors) {
 }
 const closeBlock = document.querySelector('.block__close')
 const block = document.querySelector('.block')
-const button = document.querySelector('.fullscreen__button')
+const button = document.querySelector('.ful__button')
+const closeBlockEnd = document.querySelector('.block-end__close')
+const blockEnd = document.querySelector('.block-end')
 
 button.addEventListener('click',function(){
     console.log("click")
@@ -86,8 +88,11 @@ new window.JustValidate('.form', {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           console.log('Отправлено');
-          const apply = document.querySelector('.apply');
-          apply.classList.add('open'); 
+          //const apply = document.querySelector('.apply');
+          blockEnd.classList.add('open');
+          closeBlockEnd.addEventListener('click',function(){
+            location.reload();
+          })
         }
       }
     }
