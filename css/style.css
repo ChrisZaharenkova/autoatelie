@@ -71,16 +71,18 @@ body {
 /*------------UP------------------------*/
 .up{
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  right: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   z-index: 300;}
-@media(max-width:479px){.up{bottom: 20px;right: 20px;}}
-.up__link{}
+  .up__link img{width: 60px;height: 60px;}
+@media(max-width:479px){
+.up__link img{width: 50px;height: 50px;}}
 /*------------ФОРМА--------------------*/
 .block {
+
   max-width: 500px;
   z-index: 100;
   display: none;
@@ -314,9 +316,7 @@ body {
   .header__list{gap: 10px;}
 }
 @media(max-width:479px){
-  .ful__body {
-    padding: 200px 20px 70px 20px;
-  }
+  
   .ful-text-block__title{font-size: 32px;
     padding: 10px 0 20px 0;}
   .ful-text-block__label,

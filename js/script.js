@@ -6,6 +6,7 @@ $(function(){
     });
     
   });
+  /*
   const anchors = document.querySelectorAll('a.scroll-to')
 
 for (let anchor of anchors) {
@@ -19,7 +20,19 @@ for (let anchor of anchors) {
       block: 'start'
     })
   })
-}
+}*/
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
 const closeBlock = document.querySelector('.block__close')
 const block = document.querySelector('.block')
 const button = document.querySelector('.ful__button')
