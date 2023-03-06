@@ -403,11 +403,12 @@ body {
     text-align: center;
   }
   @media(max-width:991px){
+
     .benefits__row{justify-content: space-between;}
     .benefits__body{width:50%}
   }
   @media(max-width:767px){
-    
+    .body-benefits__grid{gap: 30px;}
     .benefits__row{gap: 20px;}
     .benefits__body{
       flex: 0 1 50%;
@@ -416,6 +417,8 @@ body {
     .item-body-benefits__image img{width: 60px;}
   }
   @media(max-width:479px){
+    .body-benefits__grid{row-gap: 30px;column-gap: 0px;}
+    .wrap{max-width: 100px;}
     .benefits__container{padding: 0;}
     .item-body-benefits__image img{width: 50px;}
     .benefits{font-size: 14px;}
