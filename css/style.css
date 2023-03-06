@@ -58,13 +58,13 @@ body {
 /*------------ФОРМА--------------------*/
 .block {
   max-width: 500px;
-  z-index: 5;
+  z-index: 100;
   display: none;
   border-radius: 20px;
   padding: 20px;
   min-height:auto;
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -73,8 +73,11 @@ body {
   background-color: #e7ddd2;
   color: #272F42;
 }
+@media(max-width:991px){
+  .block{top:20%;}
+}
 @media(max-width:479px){
-  .block{left: 20px;right: 20px;}
+  .block{left: 20px;right: 20px;top:18%;}
 }
 .block__title-block{
   display: flex;
